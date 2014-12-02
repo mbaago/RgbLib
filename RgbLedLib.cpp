@@ -6,9 +6,12 @@
 
 
 	RgbLib::RgbLib(int rPin, int gPin, int bPin){
-	pinMode(redPin, OUTPUT);
-	pinMode(greenPin, OUTPUT);
-	pinMode(bluePin, OUTPUT);
+		redPin = rPin;
+		greenPin = gPin;
+		bluePin = bPin;
+		pinMode(redPin, OUTPUT);
+		pinMode(greenPin, OUTPUT);
+		pinMode(bluePin, OUTPUT);
 	}
 
 	void RgbLib::setColor(int r, int g, int b){
